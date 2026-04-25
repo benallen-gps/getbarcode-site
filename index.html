@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -460,6 +459,7 @@
     .hero-sub      { animation: fadeUp 0.5s 0.2s ease both; }
     .demo          { animation: fadeUp 0.5s 0.3s ease both; }
   </style>
+  <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 
@@ -478,8 +478,47 @@
     <section class="hero">
       <div class="wrap">
         <div class="hero-eyebrow">Agent-native registry infrastructure</div>
-        <h1 class="hero-headline">AI bots have questions. <em>We have the answers.</em></h1>
-        <p class="hero-sub">Barcode is the structured registry layer that gives AI agents accurate, verified, queryable information — instead of guesses assembled from whatever they scraped last year.</p>
+        <h1 class="hero-headline">AI Has Questions.<br><em>We Have Answers.</em></h1>
+        <p class="hero-sub">Users turn to AI to answer questions. AIs turn to Barcode to help improve those answers.</p>
+        <p class="hero-sub" style="margin-top: 0.75rem;">Barcode is the structured registry layer that gives AI agents accurate, verified, queryable information.</p>
+        <div class="pill-row" style="margin-top: 2rem;">
+          <span class="pill pill-active">MCP-queryable</span>
+          <span class="pill">Tiered data access</span>
+          <span class="pill">Real-time field freshness</span>
+          <span class="pill">Publisher-verified</span>
+          <span class="pill">Easy discovery of context-relevant tooling</span>
+          <span class="pill">Cross-merchant intelligence</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Merchant benefits -->
+    <section class="what" style="background: #f2f0ec;">
+      <div class="wrap">
+        <h2 class="section-title" style="font-size: 1.3rem; margin-bottom: 1.5rem;">For merchants and publishers</h2>
+        <div class="cards" style="grid-template-columns: 1fr 1fr 1fr;">
+          <div class="card" style="background: #ffffff; border: 1px solid #e0ddd6;">
+            <div class="card-tag" style="color: #c8382a;"><span class="tag-dot" style="background: #c8382a;"></span> Your data</div>
+            <div class="card-body" style="color: #4a4a45;">
+              <strong style="color: #1a1a18;">Verified and controlled</strong>
+              Your product information, exactly as you want it represented — structured, current, and cited correctly when an AI uses it.
+            </div>
+          </div>
+          <div class="card" style="background: #ffffff; border: 1px solid #e0ddd6;">
+            <div class="card-tag" style="color: #c8382a;"><span class="tag-dot" style="background: #c8382a;"></span> Your audience</div>
+            <div class="card-body" style="color: #4a4a45;">
+              <strong style="color: #1a1a18;">Insights into AI prompts</strong>
+              See what questions AI users are actually asking about your category — and where your products are and aren't showing up in answers.
+            </div>
+          </div>
+          <div class="card" style="background: #ffffff; border: 1px solid #e0ddd6;">
+            <div class="card-tag" style="color: #c8382a;"><span class="tag-dot" style="background: #c8382a;"></span> Your results</div>
+            <div class="card-body" style="color: #4a4a45;">
+              <strong style="color: #1a1a18;">Better experience for AIs and customers</strong>
+              When agents have good data, they give better recommendations. Better recommendations mean more confident buyers.
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -487,19 +526,19 @@
     <section class="demo">
       <div class="wrap">
         <div class="demo-label">What agents can say when they have real data</div>
-        <div class="demo-question">"Find me something like Elden Ring that I can play in short sessions."</div>
+        <div class="demo-question">"Find me a action game I can play in short sessions — something with a real challenge to it."</div>
         <div class="cards" style="grid-template-columns: 1fr 1fr; margin-bottom: 1.25rem;">
           <div class="card card-bad">
             <div class="card-tag"><span class="tag-dot"></span> Without Barcode</div>
             <div class="card-body">
               <strong>Agent response:</strong>
               <ul>
-                <li>Dark Souls III is a great choice</li>
-                <li>Sekiro offers a similar challenge</li>
-                <li>Hollow Knight has Souls-like elements</li>
+                <li>God of War — great action game</li>
+                <li>Assassin's Creed has similar elements</li>
+                <li>The Last of Us is a top pick</li>
               </ul>
               <br/>
-              Generic genre match. Session length isn't in the model's training data. It guessed.
+              Decent genre match, but none of these are short-session games. The agent didn't know to filter on that.
             </div>
           </div>
           <div class="card card-good">
@@ -507,9 +546,9 @@
             <div class="card-body">
               <strong>Agent response:</strong>
               <ul>
-                <li>Lies of P — 20–30 min sessions, Souls combat</li>
-                <li>Thymesia — compact, high skill ceiling</li>
-                <li>Mortal Shell — built for interrupted play</li>
+                <li>Hades — 20–30 min runs, high replayability</li>
+                <li>Dead Cells — pick up and put down, no checkpoints needed</li>
+                <li>Returnal — intense sessions, built around short loops</li>
               </ul>
               <br/>
               Session length is a structured field. Filtered, not guessed.
@@ -532,29 +571,11 @@
           <div class="card card-good" style="border-color: #c8e8d0; background: #f4faf5;">
             <div class="card-tag" style="color: #2a6a3a;"><span class="tag-dot" style="background: #4a9a5a;"></span> Library awareness</div>
             <div class="card-body" style="color: #2a6a3a;">
-              "You already own Sekiro — you'll have a head start. The parry timing transfers directly."
+              "You already own Hades — you'll feel right at home. The dodge timing and loop structure are nearly identical."
             </div>
           </div>
         </div>
         <p class="demo-caption">The difference isn't a smarter model. It's structured data the model can actually use.</p>
-      </div>
-    </section>
-
-    <!-- What it is -->
-    <section class="what">
-      <div class="wrap">
-        <h2 class="section-title">What Barcode is</h2>
-        <div class="what-body">
-          <p>A registry of structured, agent-readable records — organized by vertical, queryable via MCP, and designed around how agents make decisions rather than how humans browse websites.</p>
-          <p>Each record contains the fields an agent actually needs: matching criteria, caveats, session context, compatibility signals, and verified attestations from manufacturers and publishers. Not a data dump. A decision layer.</p>
-        </div>
-        <div class="pill-row">
-          <span class="pill pill-active">MCP-queryable</span>
-          <span class="pill">Tiered data access</span>
-          <span class="pill">Temporal field freshness</span>
-          <span class="pill">Manufacturer-verified</span>
-          <span class="pill">Cross-merchant intelligence</span>
-        </div>
       </div>
     </section>
 
@@ -571,7 +592,7 @@
             </span>
           </a>
           <div class="vertical-item" style="cursor:default;">
-            <span class="vertical-name">Fashion</span>
+            <span class="vertical-name">Apparel</span>
             <span class="vertical-meta">
               <span class="vertical-status">In development</span>
             </span>
