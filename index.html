@@ -469,6 +469,7 @@
         <span class="logo-dot"></span>
         Barcode
       </div>
+      <div style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-top: 0.5rem;">The product registry for AI agents</div>
     </div>
   </header>
 
@@ -477,15 +478,14 @@
     <!-- Hero -->
     <section class="hero">
       <div class="wrap">
-        <div class="hero-eyebrow">Agent-native registry infrastructure</div>
-        <h1 class="hero-headline">AI Has Questions.<br><em>We Have Answers.</em></h1>
-        <p class="hero-sub">Users turn to AI to answer questions. AIs turn to Barcode to help improve those answers.</p>
-        <p class="hero-sub" style="margin-top: 0.75rem;">Barcode is the structured registry layer that gives AI agents accurate, verified, queryable information.</p>
+        <h1 class="hero-headline"><span style="color: var(--accent);">Selling Something?</span><br>AI Has Questions.<br><em>We Have Answers.</em></h1>
+        <p class="hero-sub">Your products, accurately represented every time an AI recommends something in your category.</p>
+        <p class="hero-sub" style="margin-top: 0.75rem; font-size: 0.95rem; color: var(--ink-light);">Barcode is the structured registry layer that gives AI agents accurate, verified, queryable product information.</p>
         <div class="pill-row" style="margin-top: 2rem;">
           <span class="pill pill-active">MCP-queryable</span>
           <span class="pill">Tiered data access</span>
           <span class="pill">Real-time field freshness</span>
-          <span class="pill">Publisher-verified</span>
+          <span class="pill">Owner-verified listings</span>
           <span class="pill">Easy discovery of context-relevant tooling</span>
           <span class="pill">Cross-merchant intelligence</span>
         </div>
@@ -495,7 +495,7 @@
     <!-- Merchant benefits -->
     <section class="what" style="background: #f2f0ec;">
       <div class="wrap">
-        <h2 class="section-title" style="font-size: 1.3rem; margin-bottom: 1.5rem;">For merchants and publishers</h2>
+        <h2 class="section-title" style="font-size: 1.3rem; margin-bottom: 1.5rem;">For merchants and product owners</h2>
         <div class="cards" style="grid-template-columns: 1fr 1fr 1fr;">
           <div class="card" style="background: #ffffff; border: 1px solid #e0ddd6;">
             <div class="card-tag" style="color: #c8382a;"><span class="tag-dot" style="background: #c8382a;"></span> Your data</div>
@@ -526,56 +526,60 @@
     <section class="demo">
       <div class="wrap">
         <div class="demo-label">What agents can say when they have real data</div>
-        <div class="demo-question">"Find me a action game I can play in short sessions — something with a real challenge to it."</div>
-        <div class="cards" style="grid-template-columns: 1fr 1fr; margin-bottom: 1.25rem;">
-          <div class="card card-bad">
-            <div class="card-tag"><span class="tag-dot"></span> Without Barcode</div>
-            <div class="card-body">
-              <strong>Agent response:</strong>
-              <ul>
-                <li>God of War — great action game</li>
-                <li>Assassin's Creed has similar elements</li>
-                <li>The Last of Us is a top pick</li>
+        <div class="demo-question">"Find me a <mark style="background: #fff176; color: inherit; padding: 0 2px; border-radius: 2px;">action game</mark> I can play in <mark style="background: #fff176; color: inherit; padding: 0 2px; border-radius: 2px;">short sessions</mark> — something with a real <mark style="background: #fff176; color: inherit; padding: 0 2px; border-radius: 2px;">challenge</mark> to it."</div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; align-items: start;">
+
+          <!-- Without Barcode — grey, flat, no life -->
+          <div style="border: 1px solid #ddd; border-radius: 4px; background: #f5f5f3; padding: 1.75rem;">
+            <div style="font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.4rem;">
+              <span style="width:6px; height:6px; border-radius:50%; background:#bbb; flex-shrink:0; display:inline-block;"></span> Without Barcode
+            </div>
+            <div style="font-size: 0.9rem; line-height: 1.65; color: #555;">
+              <div style="font-family: var(--font-mono); font-size: 0.82rem; letter-spacing: 0.04em; color: #777; margin-bottom: 0.5rem;">Agent response:</div>
+              <ul style="list-style:none; padding:0;">
+                <li style="padding: 0.3rem 0 0.3rem 1rem; position:relative;"><span style="position:absolute;left:0;opacity:0.6;">—</span>God of War — great action game</li>
+                <li style="padding: 0.3rem 0 0.3rem 1rem; position:relative;"><span style="position:absolute;left:0;opacity:0.6;">—</span>Assassin's Creed has similar elements</li>
+                <li style="padding: 0.3rem 0 0.3rem 1rem; position:relative;"><span style="position:absolute;left:0;opacity:0.6;">—</span>The Last of Us is a top pick</li>
               </ul>
-              <br/>
-              Decent genre match, but none of these are short-session games. The agent didn't know to filter on that.
+              <p style="margin-top: 1rem; font-size: 0.85rem; color: #666;">Decent genre match. Session length wasn't a factor — the agent didn't have it to work with.</p>
             </div>
           </div>
-          <div class="card card-good">
-            <div class="card-tag"><span class="tag-dot"></span> With Barcode</div>
-            <div class="card-body">
-              <strong>Agent response:</strong>
-              <ul>
-                <li>Hades — 20–30 min runs, high replayability</li>
-                <li>Dead Cells — pick up and put down, no checkpoints needed</li>
-                <li>Returnal — intense sessions, built around short loops</li>
+
+          <!-- With Barcode — vibrant, structured, alive -->
+          <div style="border: 2px solid #2a6a3a; border-radius: 4px; background: #ffffff; padding: 1.75rem; box-shadow: 0 2px 12px rgba(42,106,58,0.08);">
+            <div style="font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: #2a6a3a; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.4rem;">
+              <span style="width:6px; height:6px; border-radius:50%; background:#4a9a5a; flex-shrink:0; display:inline-block;"></span> With Barcode
+            </div>
+            <div style="font-size: 0.9rem; line-height: 1.65; color: #2a4a2a;">
+              <div style="font-family: var(--font-mono); font-size: 0.82rem; letter-spacing: 0.04em; color: #3a7a3a; margin-bottom: 0.5rem;">Agent response:</div>
+              <ul style="list-style:none; padding:0;">
+                <li style="padding: 0.3rem 0 0.3rem 1rem; position:relative;"><span style="position:absolute;left:0;opacity:0.5;">—</span>Hades — 20–30 min runs, high replayability</li>
+                <li style="padding: 0.3rem 0 0.3rem 1rem; position:relative;"><span style="position:absolute;left:0;opacity:0.5;">—</span>Dead Cells — pick up and put down, no checkpoints needed</li>
+                <li style="padding: 0.3rem 0 0.3rem 1rem; position:relative;"><span style="position:absolute;left:0;opacity:0.5;">—</span>Returnal — intense sessions, built around short loops</li>
               </ul>
-              <br/>
-              Session length is a structured field. Filtered, not guessed.
+              <p style="margin-top: 1rem; font-size: 0.85rem; color: #3a6a3a;">Session length is a structured field. Filtered, not guessed.</p>
+            </div>
+
+            <!-- Barcode-powered capabilities — clearly inside the "with Barcode" world -->
+            <div style="margin-top: 1.25rem; border-top: 1px solid #cde0cd; padding-top: 1.25rem; display: flex; flex-direction: column; gap: 0.75rem;">
+              <div style="font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: #5a9a5a; margin-bottom: 0.25rem;">Also available with Barcode data</div>
+              <div style="background: #f0f7f0; border: 1px solid #cde0cd; border-radius: 3px; padding: 0.9rem 1rem; font-size: 0.85rem; color: #2a5a3a;">
+                <span style="font-family: var(--font-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.08em; color: #5a9a5a; display:block; margin-bottom:0.3rem;">Hardware check</span>
+                "Looks like your machine can handle it — your GPU clears the recommended spec with room to spare."
+              </div>
+              <div style="background: #f0f7f0; border: 1px solid #cde0cd; border-radius: 3px; padding: 0.9rem 1rem; font-size: 0.85rem; color: #2a5a3a;">
+                <span style="font-family: var(--font-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.08em; color: #5a9a5a; display:block; margin-bottom:0.3rem;">Live server signal</span>
+                "Servers are packed right now — player count is peaking. Best time to find a squad."
+              </div>
+              <div style="background: #f0f7f0; border: 1px solid #cde0cd; border-radius: 3px; padding: 0.9rem 1rem; font-size: 0.85rem; color: #2a5a3a;">
+                <span style="font-family: var(--font-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.08em; color: #5a9a5a; display:block; margin-bottom:0.3rem;">Library awareness</span>
+                "You already own Hades — you'll feel right at home. The dodge timing and loop structure are nearly identical."
+              </div>
             </div>
           </div>
+
         </div>
-        <div class="cards" style="grid-template-columns: 1fr 1fr 1fr;">
-          <div class="card card-good" style="border-color: #c8d8e8; background: #f4f7fa;">
-            <div class="card-tag" style="color: #3a5a7a;"><span class="tag-dot" style="background: #5a8aaa;"></span> Hardware check</div>
-            <div class="card-body" style="color: #3a5a7a;">
-              "Looks like your machine can handle it — your GPU clears the recommended spec with room to spare."
-            </div>
-          </div>
-          <div class="card card-good" style="border-color: #c8d0e8; background: #f5f4fa;">
-            <div class="card-tag" style="color: #4a3a7a;"><span class="tag-dot" style="background: #7a6aaa;"></span> Live server signal</div>
-            <div class="card-body" style="color: #4a3a7a;">
-              "Servers are packed right now — player count is peaking. Best time to find a squad."
-            </div>
-          </div>
-          <div class="card card-good" style="border-color: #c8e8d0; background: #f4faf5;">
-            <div class="card-tag" style="color: #2a6a3a;"><span class="tag-dot" style="background: #4a9a5a;"></span> Library awareness</div>
-            <div class="card-body" style="color: #2a6a3a;">
-              "You already own Hades — you'll feel right at home. The dodge timing and loop structure are nearly identical."
-            </div>
-          </div>
-        </div>
-        <p class="demo-caption">The difference isn't a smarter model. It's structured data the model can actually use.</p>
+        <p style="margin-top: 1.5rem; font-size: 0.82rem; color: var(--ink-light); font-style: italic; text-align: center;">The difference isn't a smarter model. It's structured product data the model can actually use.</p>
       </div>
     </section>
 
@@ -618,7 +622,7 @@
       <div class="wrap">
         <div class="cta-inner">
           <h2 class="section-title">Get involved</h2>
-          <p class="cta-body">Barcode is early. If you're a publisher, manufacturer, or developer building in this space — or you just think this should exist — we want to hear from you.</p>
+          <p class="cta-body">Barcode is early. If you're a merchant, product owner, or developer building in this space — or you just think this should exist — we want to hear from you.</p>
           <div class="cta-links">
             <a class="btn btn-primary" href="mailto:hello@getbarcode.ai">Get in touch</a>
             <a class="btn btn-secondary" href="https://redlaser.dev">Developer docs →</a>
